@@ -1,0 +1,150 @@
+.theme {
+  color: white;
+}
+.theme-light th {
+  background-color: #f7f7f7;
+}
+.theme-blue th {
+  background-color: rgb(75, 134, 185);
+}
+.noData {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  flex-direction: column;
+}
+table {
+  left: 0%;
+  right: 0%;
+  top: 10%;
+  bottom: 0%;
+  border-collapse: collapse;
+  padding: 24px 0px 24px 0px;
+  background: #ffffff;
+  border-radius: 16px;
+  font-family: "Avenir LT Std";
+  font-style: normal;
+  display: table;
+  width: 100%;
+  text-align: left;
+  filter: drop-shadow(0px 3px 8px rgba(0, 0, 0, 0.12));
+}
+th {
+  align-items: flex-start;
+  padding: 24px;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #000000;
+  background-position-x: right;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-size: 24px;
+}
+
+td {
+  height: 1px;
+  font-weight: 350;
+  font-size: 20px;
+  line-height: 35px;
+  border-radius: 1px;
+  padding: 24px;
+  gap: 10px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+table tr {
+  border-bottom: 1px solid #e1e1e1;
+}
+table th:last-child {
+  border-radius: 0px 16px 0px 0px;
+}
+table tr:last-child {
+  border: 0;
+}
+table th:first-child {
+  border-radius: 16px 0px 0px 0px;
+}
+span {
+  font-size: 32px;
+
+  height: 40px;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+input[type="radio"] {
+  -webkit-appearance: none;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #a8a8a8;
+  border-radius: 50%;
+  outline: none;
+}
+
+input[type="radio"]:checked:before {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 50%;
+  border: 8px solid #5c50bb;
+  border-radius: 50%;
+}
+input[type="checkbox"] {
+  width: 32px;
+  height: 32px;
+  accent-color: #5c50bb;
+}
+
+input[type="checkbox"]:checked:after {
+  display: block;
+  background-color: #5c50bb !important;
+}
+
+@media (max-width: 480px) {
+  table {
+    border-radius: 8px;
+    filter: drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.12));
+  }
+  th,
+  td {
+    background-size: 16px;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 8px 16px;
+  }
+  input[type="radio"] {
+    width: 24px;
+    height: 24px;
+  }
+
+  input[type="radio"]:checked:before {
+    border: 6px solid #5c50bb;
+  }
+  input[type="checkbox"] {
+    width: 24px;
+    height: 24px;
+  }
+  span {
+    font-size: 24px;
+    height: 30px;
+  }
+  .noData {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+  }
+}
